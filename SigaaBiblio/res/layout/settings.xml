@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<CheckBoxPreference
+	    android:key="lembrarLogin"
+		android:title="@string/lembrar"
+		android:summary="@string/lembrar_texto"
+		android:defaultValue="false" />
+	
+	<ListPreference
+        android:key="cor"
+        android:title="@string/cor"
+        android:summary="@string/cor_texto"
+        android:entries="@array/background"
+        android:entryValues="@array/background_values"
+        android:defaultValue="Azul"
+        />
+	
+	<CheckBoxPreference
+	    android:key="guardarHistorico"
+		android:title="@string/guardarHist"
+		android:summary="@string/guardar_texto"
+		android:defaultValue="false" />
+	
+	<CheckBoxPreference
+	    android:key="guardarCamposPesquisa"
+		android:title="@string/guardarCamposPesquisas"
+		android:summary="@string/pesquisas_texto"
+		android:defaultValue="false" />
+	
+	<CheckBoxPreference
+	    android:key="guardarRenovacao"
+		android:title="@string/guardarRenovacao"
+		android:summary="@string/guardar_renovacao_texto"
+		android:defaultValue="false" />
+	
+	
+</PreferenceScreen>

@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_softblue"
+    android:orientation="vertical"
+    android:id="@+id/login_body" >
+
+    <!-- android:background="#2932aa" -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/background_azul1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/login_header" >
+
+        <TextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titleHistorico"
+            android:textColor="@android:color/white"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ViewFlipper
+            android:id="@+id/viewFlipper2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animationCache="true" >
+        </ViewFlipper>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/retornarPesquisa"
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Retornar a Pesquisa" />
+
+            <Button
+                android:id="@+id/retornarMenu"
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Retornar ao Menu" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

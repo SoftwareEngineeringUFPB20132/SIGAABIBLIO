@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuActivity" 
+    android:id="@+id/login_body" >
+    
+    <LinearLayout 
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/login_header" >
+       
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="5dp"
+	        android:background="@drawable/background_azul1"
+	        android:gravity="center"
+	        android:orientation="horizontal" >
+	
+	        <ScrollView
+        android:id="@+id/scrollViewx0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+	        <TextView
+	            android:id="@+id/textViewSituacaoUsuario1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="20dp"
+	            android:text="Dados do usuário"
+	            android:textColor="@android:color/white"
+	            android:textSize="23dp" />
+		</ScrollView>
+	        <ImageButton
+	            android:id="@+id/imageButton1"
+	            android:layout_width="75dp"
+	            android:layout_height="100dp"
+	            android:layout_margin="10dp"
+	            android:layout_weight="0.12"
+	            android:src="@drawable/contact" />
+	    </LinearLayout>
+    
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="5dp"
+	        android:background="@drawable/background_azul2"
+	        android:gravity="center"
+	        android:orientation="horizontal"
+	        android:id="@+id/login_header_3"
+	        android:padding="13dp">
+	        
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" 
+	            android:orientation="vertical">
+	
+		        <TextView
+		            android:id="@+id/textViewDataEmprestimo"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Empréstimos Abertos N"
+		            android:textSize="17dp" />
+		        <TextView
+		            android:id="@+id/textViewDataRenovacao"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Empréstimos: SIM"
+		            android:textSize="17dp"/>
+		        </LinearLayout>
+		        
+	        </LinearLayout>
+        </LinearLayout>
+        
+        <br.nti.SigaaBiblio.layouts.DashboardLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/consultarHistorico"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Consultar Acervo" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Consultar Artigo" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Renovação" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Minha Situação" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Meus Empréstimos" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sair" />
+		    
+		</br.nti.SigaaBiblio.layouts.DashboardLayout>
+        
+</LinearLayout>
+
+

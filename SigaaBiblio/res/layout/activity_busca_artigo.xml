@@ -1,0 +1,153 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_softblue"
+    android:id="@+id/login_body" >
+	 <!-- android:background="#2932aa"-->
+	<LinearLayout
+	    
+	    android:layout_width="match_parent"
+	    android:layout_height="70dp"
+	    android:background="@drawable/background_azul1"
+	    android:gravity="center"
+	    android:orientation="horizontal"
+	    android:id="@+id/login_header" >
+
+	    <TextView
+	        android:id="@+id/textViewTitleArtigo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/title_busca_artigo"
+	        android:textColor="@android:color/white"
+	        android:textSize="25dp" />
+	</LinearLayout>
+  	
+	
+	<ScrollView
+	    android:id="@+id/scrollView1"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+	
+	<TextView
+	    android:id="@+id/login_header_2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:layout_margin="10dp"
+	    android:text="@string/text_busca_artigo"
+		android:gravity="center"
+	    android:textSize="20dp"
+	    android:background="@drawable/background_azul2" />
+	
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center" >
+
+		<TextView
+		    android:id="@+id/textViewTituloArtigo"	    
+  		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Título: " 
+		    android:textSize="20dp"
+		    android:layout_margin="7dp"/>
+
+		<EditText
+		    android:id="@+id/editTextTituloArtigo"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="17dp"
+		    android:ems="10">
+		</EditText>
+	    
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center" >
+
+		<TextView
+		    android:id="@+id/textViewAutorArtigo"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_margin="7dp"	    
+		    android:text="Autor:"
+		    android:textSize="20dp" />
+
+		<EditText
+		    android:id="@+id/editTextAutorArtigo"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="27dp"
+		    android:ems="10"
+		    />
+	    
+	</LinearLayout>
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center" >
+
+		<TextView
+		    android:id="@+id/textViewPalavraChaveArtigo"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Palavra-\nChave:"
+		    android:textSize="20dp"
+		    android:layout_marginRight="10dp"
+		    android:layout_marginLeft="7dp"
+		     />
+
+		<EditText
+		    android:id="@+id/editTextPalavraChaveArtigo"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="-4dp"
+		    android:ems="10"
+		    />
+	    
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center" >
+
+		<TextView
+		    android:id="@+id/textViewBibliotecaArtigo"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"	    
+		    android:text="Biblioteca:"
+		    android:textSize="20dp"
+		    android:layout_marginLeft="7dp"
+		     />
+
+		<Spinner
+		    android:id="@+id/spinnerBibliotecaArtigo"
+		    android:layout_width="wrap_content"
+		    android:layout_height="50dp" />
+	    
+	</LinearLayout>
+	
+	<Button
+	    android:id="@+id/buttonBuscarArtigo"
+	    android:layout_width="230dp"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:layout_marginTop="30dp"
+	    android:text="Pesquisar"
+	    android:onClick="pesquisar" />
+	
+	 </LinearLayout>
+	</ScrollView>
+  
+</LinearLayout>

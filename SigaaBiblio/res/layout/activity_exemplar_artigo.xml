@@ -1,0 +1,227 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:background="#EFF3FA"
+     android:id="@+id/login_body" >
+
+    <!-- android:background="#2932aa" -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/background_azul1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/login_header" >
+
+        <TextView
+            android:id="@+id/textViewExemplares"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exemplar_artigo"
+            android:textColor="@android:color/white"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+
+    	<ScrollView
+	    android:id="@+id/scrollView2"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" 
+
+	    >
+    
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical" >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="#FFFFFF"
+            android:stretchColumns="*" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                
+                android:background="#000000" >
+
+                <TextView android:text="Código \nde Barras"
+                    android:layout_margin="1dp"
+                    android:layout_marginRight="0dp"
+                android:background="#C8D5EC"
+                android:padding="15dip" />
+
+                 <TextView android:id="@+id/InfoCodigoBarra" 
+                    android:text=""
+                    
+                    android:layout_margin="1dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_height="match_parent"
+                    
+                	android:background="#FFFFFF"
+                	android:paddingTop="15dip" 
+                	android:paddingLeft="15dip"
+                	></TextView>
+                
+                
+                </TableRow>
+                
+                <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#000000">
+                
+                
+                <TextView 
+                    android:text="Numero" 
+                    android:layout_margin="1dp"
+                android:background="#C8D5EC"
+                android:layout_marginLeft="0dp"
+                android:padding="15dip"/>
+                
+                <TextView android:id="@+id/InfoNumero" 
+                    android:text=""                   
+                    android:layout_margin="1dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_height="match_parent"                  
+                	android:background="#FFFFFF"
+                	android:padding="15dip" />
+                
+                </TableRow>
+                
+        		<TableRow
+                android:id="@+id/tableRow1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#000000">
+                
+                <TextView android:text="Volume" 
+                android:layout_margin="1dp"
+                android:background="#C8D5EC"
+                android:padding="15dip"
+                android:layout_height="match_parent"
+              
+                />
+                
+                
+                <TextView android:id="@+id/InfoVolume" 
+                    android:text=""                   
+                    android:layout_margin="1dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_height="match_parent"                  
+                	android:background="#FFFFFF"
+                	android:padding="15dip" />
+                </TableRow>
+                
+        		<TableRow
+                android:id="@+id/tableRow1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#000000"
+                >
+                <TextView android:text="Ano" 
+                    android:layout_margin="1dp"
+                android:background="#C8D5EC"
+                android:padding="15dip"
+                android:layout_height="match_parent"/>
+                
+                
+                <TextView android:id="@+id/InfoAno" 
+                    android:text=""                   
+                    android:layout_margin="1dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_height="match_parent"                  
+                	android:background="#FFFFFF"
+                	android:padding="15dip" />
+                </TableRow>
+                
+                
+        		<TableRow
+                android:id="@+id/tableRow1"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#000000">
+                
+                <TextView android:text="Situação" 
+                    android:layout_margin="1dp"
+                android:background="#C8D5EC"
+                android:padding="15dip"
+                android:layout_height="match_parent"/>
+                
+                <TextView android:id="@+id/InfoStatus" 
+                    android:text=""                   
+                    android:layout_margin="1dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_height="match_parent"                  
+                	android:background="#FFFFFF"
+                	android:padding="15dip" />
+                </TableRow>
+           		
+
+          
+        </TableLayout>
+
+        
+       
+
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Biblioteca"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Localização"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+        <Button
+            android:id="@+id/retornarPesquisa"
+            android:layout_width="103dp"
+            android:layout_margin="15dp"
+            android:layout_height="wrap_content"
+            
+            android:text="Retornar a Pesquisa" />
+        
+        <Button
+            android:id="@+id/retornarMenu"
+            android:layout_width="103dp"
+            android:layout_margin="15dp"
+           	
+            android:layout_height="wrap_content"
+            android:text="Retornar ao Menu" />
+        </LinearLayout>
+        
+		</LinearLayout>
+
+        </ScrollView>
+
+    	<LinearLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="vertical"
+    	    android:background="@drawable/background_azul2" >
+    	</LinearLayout>
+
+</LinearLayout>

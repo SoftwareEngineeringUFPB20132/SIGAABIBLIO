@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nti.SigaaBiblio"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="10" />
+
+
+    <permission
+        android:name="com.nti.SigaaBiblio.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.nti.SigaaBiblio.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+	<uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <provider
+            android:name="br.nti.SigaaBiblio.persistence.UsuarioProvider"
+            android:authorities="br.nti.SigaaBiblio.model.Usuario.Usuarios" />
+
+        <activity
+            android:name="br.nti.SigaaBiblio.activities.LoginActivity"
+            android:label="@string/app_name" >
+             <intent-filter> 
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.nti.SigaaBiblio.activities.RenovacaoActivity"
+            android:label="@string/title_activity_renovacao" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.nti.SigaaBiblio.activities.MenuActivity"
+            android:label="@string/title_activity_menu" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.nti.SigaaBiblio.activities.SituacaoUsuarioActivity"
+            android:label="@string/title_activity_situacao_usuario" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.nti.SigaaBiblio.activities.ResultadoBuscaActivity"
+            android:label="@string/title_activity_resultado_busca" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.nti.SigaaBiblio.activities.BuscaArtigoActivity"
+            android:label="@string/title_activity_busca_artigo" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.nti.SigaaBiblio.activities.BuscaLivroActivity"
+            android:label="@string/title_activity_busca_livro" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.nti.SigaaBiblio.activities.DadosTituloActivity"
+            android:label="@string/title_activity_dados_titulo" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.nti.SigaaBiblio.activities.ExemplaresActivity"
+            android:label="@string/title_activity_exemplares" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.nti.SigaaBiblio.activities.SelecionarHistoricoActivity"
+            android:label="@string/title_activity_selecionar_historico" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.nti.SigaaBiblio.activities.HistoricoEmprestimosActivity"
+            android:label="@string/title_activity_historico_emprestimos" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.nti.SigaaBiblio.activities.PrefsActivity"
+            android:label="Preferências" />
+        <activity
+            android:name="br.nti.SigaaBiblio.activities.ResultadoBuscaArtigoctivity"
+            android:label="@string/title_activity_resultado_busca_artigoctivity" >
+        </activity>
+        <activity
+            android:name="br.nti.SigaaBiblio.activities.ExemplarArtigoActivity"
+            android:label="@string/title_activity_exemplar_artigo" >
+        </activity>
+        <activity
+            android:name="br.nti.SigaaBiblio.activities.CambridgeActivity"
+            android:label="@string/title_activity_cabridge" >
+        </activity>
+        <activity
+            android:name="br.nti.SigaaBiblio.activities.RegistroRenovacoesActivity"
+            android:label="@string/title_activity_registro_renovacoes" >
+        </activity>
+        <activity
+            android:name="br.nti.SigaaBiblio.activities.MapsActivity"
+            android:label="@string/title_activity_maps" >
+                   </activity>
+        
+          <meta-data
+        android:name="com.google.android.maps.v2.API_KEY"
+        android:value="AIzaSyBYvcghsOwjFzRZ-hZLIunFtBM9ejf9HWY" />
+          
+    </application>
+
+</manifest>

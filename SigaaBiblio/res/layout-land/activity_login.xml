@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	 <!-- android:background="#2932aa"-->
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/background_azul1"
+	    android:gravity="center"
+	    android:orientation="horizontal" >
+
+	    <ImageView
+	        android:id="@+id/imageView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/brasao_ufpb" />
+
+	    <TextView
+	        android:id="@+id/textViewSituacaoUsuario1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/nomeSistema"
+	        android:textColor="@android:color/white"
+	        android:textSize="25dp" />
+	</LinearLayout>
+  	
+	<TextView
+	    android:id="@+id/textViewDataEmprestimo"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:layout_margin="10dp"
+	    android:text="Informe seu cadastro no SIGAA UFPB"
+		android:gravity="center"
+	    android:textSize="20dp" />
+	
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:gravity="center_horizontal">
+	    
+	   			
+		<TextView
+		    android:id="@+id/textViewDataRenovacao"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Login: " 
+		    android:textSize="20dp"
+		    android:layout_margin="10dp"/>
+
+		<EditText
+		    android:id="@+id/editTextLoginUsuario"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/textViewDataRenovacao"
+		    android:layout_marginLeft="80dp"
+		    android:ems="10">
+		</EditText>
+    
+		
+		<TextView
+		    android:id="@+id/textViewDataDevolucao"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Senha:"
+		    android:textSize="20dp"
+		    android:layout_alignTop="@+id/textViewDataRenovacao"
+		    android:layout_marginTop="60dp"
+		    android:layout_marginLeft="10dp"
+		     />
+
+		<EditText
+		    android:id="@+id/editTextSenhaUsuario"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/editTextLoginUsuario"
+		    android:layout_alignRight="@+id/editTextLoginUsuario"
+		    android:layout_alignTop="@+id/textViewDataDevolucao"
+		    android:ems="10"
+		    android:inputType="textPassword" />
+	    
+		<Button
+		    android:id="@+id/consultarHistorico"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignRight="@+id/editTextSenhaUsuario"
+		    android:layout_marginRight="-60dp"
+		    android:layout_alignTop="@+id/editTextSenhaUsuario"
+		    android:text="Entrar" />
+		
+	</RelativeLayout>
+  
+</LinearLayout>

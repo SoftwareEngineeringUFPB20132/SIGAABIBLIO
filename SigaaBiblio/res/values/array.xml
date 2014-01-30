@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="background">
+        <item>Azul</item>
+        <item>Vermelho</item>
+        <item>Verde</item>
+    </string-array>
+
+    <string-array name="background_values">
+        <item>Azul</item>
+        <item>Vermelho</item>
+        <item>Verde</item>
+    </string-array>
+
+</resources>

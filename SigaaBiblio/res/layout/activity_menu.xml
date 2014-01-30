@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuActivity"
+    android:background="@color/background_softblue"
+    android:id="@+id/login_body" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/background_azul1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/login_header" >
+
+        <ScrollView
+        android:id="@+id/scrollViewx0"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scrollbars="none" 
+        >
+        <TextView
+            android:id="@+id/textViewSituacaoUsuario1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Dados do usuário"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" 
+            android:layout_gravity="center_vertical"/>
+        </ScrollView>
+        
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="75dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_weight="0.12"
+            android:src="@drawable/contact" />
+        
+    </LinearLayout>
+    
+ 
+           <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/background_azul2"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="13dp"
+                android:id="@+id/login_header_3" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textViewTotalEmprestimos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total de Empréstimos em Aberto: N"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:id="@+id/textViewPodeFazerEmprestimo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Posso fazer Empréstimos: SIM"
+                        android:textSize="17dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <br.nti.SigaaBiblio.layouts.DashboardLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_weight="2.86" >
+
+                <Button
+                    android:id="@+id/consultarAcervo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Consultar Acervo"
+                    android:onClick="consultarAcervo" />
+
+                <Button
+                    android:id="@+id/consultarArtigo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Consultar Artigo"
+                    android:onClick="consultarArtigo" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Renovação"
+                    android:onClick="emprestimosRenovaveis" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Minha Situação" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Meus Empréstimos"
+                     />
+                
+ 
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Localizar Bibliotecas"
+                    android:onClick="localizarBibliotecas"
+                    
+                     />
+            </br.nti.SigaaBiblio.layouts.DashboardLayout>
+        </LinearLayout>
+
+		</ScrollView>
+        
+</LinearLayout>
+
+
